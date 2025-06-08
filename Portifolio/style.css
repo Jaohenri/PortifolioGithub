@@ -1,0 +1,97 @@
+/*Aqui importamos fontes do google fonts para o código*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+/*Altera a margem e o Padding da pagina, se chama reset.css, isso reseta a formatação de todos os navegadores para maior controle*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Aqui estamos alterando as caracteristicas da tag body, height 100vh está dizendo que a largura do body, irá ser igual a 100% da largura do viewport.
+  Box-sizing faz com que nenhum elemento ultrapasse a largura do body, não saia da tela
+  Background-color está alterando a cor do fundo para preto
+  Color está alterando a cor do texto para branco*/
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    color: #F6F6F6;
+}
+
+/*Aqui estamos alterando a class .titulo-destaque, mudando a cor do texto dessa class*/
+.titulo-destaque {
+    color:#22D4FD;
+}
+
+/*Border-radius arredonda a borda da imagem
+  Border coloca borda na imagem
+  Border-color coloca cor na borda
+  width altera a largura da imagem
+  height altera a altura da imagem*/
+.minha-foto {
+    border-radius: 10px;
+    border: 3px solid #22D4FD;
+    width: 350px;
+    height: 415px;
+    box-shadow: 3px 3px #22D4FD;
+  }
+
+
+/*- Coloca flexbox no main, o Flex box faz com que os elementos sejam organizados de forma melhor, 
+  baseado no elemento pai, nesse caso estão dispostos em linha
+  - display flex coloca o flexbox na classe apresentacao que é o main
+  - align-items center centralizada os elemtos
+  - justify-content: space-between alinha os dois elementos do main, Section e a imagem de acordo 
+  com as indicações, nesse caso, space between espaça igualmente todos os elementos*/
+.apresentacao {
+    margin: 10% 23.7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*Aqui estamos modificando as caracteristicas da section que representa o conteudo, o texto*/
+.apresentacao__conteudo{
+  width: 615px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+
+/*Aqui estamos modificando as caracteristicas do h1 da section, ou seja, o "titulo"*/
+.apresentacao__conteudo__titulo{
+  font-size: 36px;
+  font-family: 'Krona One', sans-serif;
+}
+
+/*Aqui estamos modificando as caracteristicas do p da section, ou seja, o paragrafo*/
+.apresentacao__conteudo__paragrafo{
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Aqui apenas estamos colocando flexbox nos botões e separando eles com o justify content*/
+.apresentacao__links{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Aqui vamos estilizar os botoes, mudando cor de fundo, largura, alinhamento, bordas e texto*/
+.apresentacao__links__link{
+  background-color: #22D4FD;
+  width: 280px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
